@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title> Rock, Paper, Scissors</title>
+  <body>
+    <body>
+      <div class="flex-column main-container">
+        <!-- header block -->
+      <header class="title-block flex-row">
+        <img src="./images/logo-bonus.svg">
+        <div class="score flex-column">
+          <div class="score-title">Score</div>
+          <div class="score-count"></div>
+        </div>
+      </header>
+    
+      <!--  main User choice -->
+      <main class="user-choice">
+        <div class="game-card scissors"><img src="/images/icon-scissors.svg" alt=""></div>
+        <div class="game-card paper"><img src="/images/icon-paper.svg" alt=""></div>
+        <div class="game-card rock"><img src="/images/icon-rock.svg" alt=""></div>
+        <div class="game-card lizard"><img src="/images/icon-lizard.svg" alt=""></div>
+        <div class="game-card spock"><img src="/images/icon-spock.svg" alt=""></div>
+      </main>
+    
+
+      <!-- main interface -->
+      <div class="section picked flex-row hidden">
+        <div class="choice flex-column">
+          <p>You picked</p>
+          <div class="user-pick"></div>
+        </div>
+        <div class="result">
+          <div class="title">You lose</div>
+          <button>Play again</button>
+        </div>   
+        <div class="choice flex-column">
+          <p>The house picked</p>
+          <div class="pc-pick"></div>
+        </div> 
+      </div>
+    
+      <!-- rules modal window and button -->
+      <button class="reset-btn">Reset</button>
+      <button class="rules-btn">Rules</button> 
+      <div class="modal-bg"></div>
+      <div class="modal">
+        <span class="close">
+          <img src="/images/icon-close.svg" alt="">
+        </span>
+        <div class="title">Rules</div>
+        <div class="content">
+          <img src="/images/image-rules-bonus.svg" alt="">
+        </div>
+      </div>
+    
+ <script src="./index.js"></script>
+</body>
+</html>
