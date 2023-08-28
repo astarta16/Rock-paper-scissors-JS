@@ -16,7 +16,7 @@ function game() {
 
  // When the page finishes loading
 window.addEventListener('load', () => {
-    // Retrieve the user's score from local storage and update the currentScore variable
+    
     retrieveScoreFromLocalStorage();
 
     // Select all the user's choice cards (rock, paper, scissors, lizard, spock)
